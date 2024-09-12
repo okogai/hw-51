@@ -1,0 +1,11 @@
+.ball {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: radial-gradient(circle at 50% 40%, #fcfcfc, #efeff1 66%, #9b5050 100%);
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
