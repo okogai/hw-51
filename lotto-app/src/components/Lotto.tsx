@@ -15,4 +15,25 @@ const getRandomNumbers = (): number[] => {
     return numbers.sort((a, b) => a - b);
 };
 
+const Lotto: React.FC = () => {
+    const [numbers, setNumbers] = useState<number[]>([5, 11, 16, 23, 32]);
+
+    const refreshNumbers = () => {
+        setNumbers(getRandomNumbers());
+    };
+
+    return (
+        <div>
+            <div className='numbers-container'>
+                {numbers.map((number) => (
+                    <Ball key={number} number={number} />
+                ))}
+            </div>
+            <button type='button' onClick={refreshNumbers} className='refresh-btn'>
+                New numbers
+            </button>
+        </div>
+    );
+};
+
 export default Lotto;
