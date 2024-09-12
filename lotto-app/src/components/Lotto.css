@@ -1,0 +1,20 @@
+.numbers-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.refresh-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #28a745c4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.refresh-btn:hover {
+    background-color: #28a745;
+}
